@@ -17,7 +17,7 @@ The database schema follows a well-defined **Entity-Relationship (ER) Model**:
 ![ER Diagram](EcommerceDatabase.png)
 
 ## Repository Structure
-- `schema.sql` - Contains SQL scripts for database creation.
+- `EcommerceDatabaseCreation&DataLoad.sql` - Contains SQL scripts for database creation.
 - `data/` - Includes CSV files with sample data for testing.
 - `er_diagram.png` - Visual representation of the database structure.
 - `README.md` - Documentation for this repository.
