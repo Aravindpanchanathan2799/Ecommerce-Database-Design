@@ -6,15 +6,7 @@ CREATE TABLE user_roles (
     role_name VARCHAR(50) UNIQUE NOT NULL
 );
 
-CREATE TABLE users (
-    user_id INT AUTO_INCREMENT PRIMARY KEY,
-    full_name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    password_hash TEXT NOT NULL,
-    role_id INT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (role_id) REFERENCES user_roles(role_id) ON DELETE CASCADE
-);
+
 
 CREATE INDEX idx_users_email ON users(email);
 
